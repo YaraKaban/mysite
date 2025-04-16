@@ -15,11 +15,35 @@ table.double-borders {
   width: 100%;
   border: 1px solid black
 }
+.table-wrapper{
+  overflow-x: auto;
+  max-width: 100%;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+.highlight-border{
+  border: 2px solid #999;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 10px;
+}
 th,td,tr {
   border: 1px solid  black;
   padding: 8px;
   text-align: center;
   vertical-align: middle;
+}
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+  tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+tbody tr:hover {
+  background-color: #030303;
 }
 figure{ 
     float: right;
